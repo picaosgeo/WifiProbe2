@@ -1,0 +1,16 @@
+[Unit]
+ Description=WiFi Probe Service
+ After=network.target
+ ConditionPathExists=/opt/wifiprobe/bin
+
+[Service]
+ Type=simple
+ Restart=on-failure
+ ExecStart=/opt/wifiprobe/bin/startprobe.sh
+ ExecStop=/opt/wifiprobe/bin/stopprobe.sh
+ TimeoutSec=50
+ StandardOutput=tty
+ RemainAfterExit=yes
+
+[Install]
+ WantedBy=multi-user.target

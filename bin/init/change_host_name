@@ -1,0 +1,26 @@
+#!/bin/bash
+echo 'Going to set the new name ' \"$1\" ' to /etc/hostname and /etc/hosts.'
+read -p  "Are you sure? (Y/n) " -n 1
+#[[ $REPLY = [Nn] ]] && exit 1
+[[ $REPLY = [Nn] ]] && echo && echo 'bye...' && exit 1
+
+echo
+echo '---- Current settings ----------'
+echo '/etc/hostname:'
+cat /etc/hostname
+echo '--------'
+echo '/etc/hosts:'
+cat /etc/hosts
+echo '--------------------------------'
+echo
+echo -n  '** change host name to '
+echo $1 | sudo tee /etc/hostname
+sudo sed -i -e 's/127.0.1.1.*/127.0.1.1\t'$1'/' /etc/hosts
+echo
+echo '---- New settings --------------'
+echo '/etc/hostname:'
+cat /etc/hostname
+echo '--------'
+echo '/etc/hosts:'
+cat /etc/hosts
+echo '--------------------------------'

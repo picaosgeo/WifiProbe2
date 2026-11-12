@@ -1,0 +1,20 @@
+#! /bin/bash
+# プローブステーションの環境設定パラメータ
+# probe_number : ステーションの番号
+# interval : キャプチャファイルのローテーション間隔（sec）
+# mode : ローテーションモード duration (sec), filesize (KB)
+# usb_poweroff : USBの電源制御
+# hdmi_poweroff : HDMIの電源制御
+# keeppcap : PCAPファイルを保存するかどうか
+# epaper : e-Paperディスプレイを使用するかどうか
+# epaper_refresh : 再描画する間隔（秒）
+
+readonly BIN_DIR='/opt/wifiprobe'
+readonly probe_number='001'
+readonly mode='filesize'  # mode: duration (sec), filesize (KB), 
+readonly interval=10
+readonly usb_poweroff=false
+readonly hdmi_poweroff=false
+readonly keeppcap=false
+readonly epaper=true
+readonly epaper_refresh=600
