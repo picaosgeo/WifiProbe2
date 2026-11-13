@@ -287,6 +287,8 @@ https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(B)_Manual#Introduction
 - ePaperの表示更新中にリブートし、表示が異常になった場合、python /opt/wifiprobe/bin/epd_clear.py を実行する。
 - 手動で収録を終了する場合、sudo systemctl stop wifiprobe を実行する。再スタートは sudo reboot で行う。
 - ePaperの再描画時間が45秒のため、 wifiprobe.service は TimeoutSec=50 に設定している。
+- 2023年に開発したモノです。インストールするライブラリは最新のものをご利用ください。
+- セキュリティ関係は別途必要な設定を行ってください。
 
 ## License
 
