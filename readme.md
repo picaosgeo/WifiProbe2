@@ -7,8 +7,8 @@ Kali Linux on raspberry pi 3B,4B 上に 自動Wifi Probe 環境を構築する�
 ---
 
 - Raspberry Pi 3 シリーズ 以降
-- Seed Studio RTC HAT(ds1307) DigiKey等で購入
-- Waveshare 2.13inch e-Paper HAT (B) Amazon等で購入
+- Seed Studio RTC HAT(ds1307) DigiKey等で購入（pi5の場合モジュール不要、RTC用バッテリだけ必要）
+- Waveshare 2.13inch e-Paper HAT (B) Amazon等で購入（表示が必要ない場合は不要）
 
 ### インストール
 
