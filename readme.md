@@ -62,14 +62,12 @@ sudo apt -y install libraspberrypi-bin
 - USB給電制御用のライブラリをインストールする
 
 ```shell
-sudo -i
 sudo apt -y install uhubctl
 ```
 
 - ファイル監視用のライブラリをインストールする
 
 ```shell
-sudo -i
 sudo apt -y install inotify-tools
 ```
 
